@@ -1,0 +1,155 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    border-bottom: 3px solid white;
+
+}
+
+.nav-link{
+    display: flex;
+}
+
+.nav-link li{
+    text-decoration: none;
+    list-style: none;
+}
+.nav-link li a{
+    text-decoration: none;
+    padding-left: 20px;
+    color: white;
+}
+
+
+.home{
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: 20px;
+}
+.textDiv{
+    width: 55%;
+   
+}
+.imgDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.imgDiv img{
+    height: 300px;
+}
+.textDiv h1{
+    margin: 0;
+    font-weight: 700;
+    font-size:9rem;
+    animation-name: fadeIn;
+    animation-duration: 3s;
+}
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.homeParent{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+}
+.about{
+    display: flex;
+    flex-direction: row;
+    padding: 100px 75px;
+    margin: 0;
+}
+.img{
+    width: 40%;
+}
+.img img{
+    height: 550px;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    padding-right: 70px;
+    align-content: flex-start;
+}
+.content h1{
+    font-size: 80px;
+    font-weight: 700;
+    margin: 0;
+}
+.service{
+    font-size: 30px;
+    font-weight: 700;
+    padding: 0 80px;
+}
+.row{
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: nowrap;
+}
+.container{
+    padding: 0 80px;
+}
+.item{
+    max-width: 30%;
+    border: 2px solid black;
+    margin-right: 2rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.contact h1{
+color: white;
+font-size: 40px;
+text-align: center;
+}
+.item:hover{
+    background-color: black;
+    color: white;
+    transition: .2s;
+}
+.contact{
+    background-color: black;
+    padding: 6rem 8rem;
+
+}
+.contact input{
+    width: 100%;
+    padding: 15px 5px;
+    margin-bottom: 15px;
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+}
+.contact button{
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+html{
+    scroll-behavior: smooth;
+}
